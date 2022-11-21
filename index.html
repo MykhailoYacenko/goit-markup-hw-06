@@ -72,10 +72,74 @@
             Замовити послугу
           </button>
         </div>
+
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <form class="modal-field">
+              <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
+              <ul class="field list">
+                <li class="field-item">
+                  <label for="name">Ім'я</label>
+                  <input
+                    class="modal-input"
+                    type="text"
+                    name="user-callback-field"
+                    id="name"
+                  /><svg class="icon-modal-input" width="18" height="18">
+                    <use href="./images/icons.svg#icon-person-modal"></use>
+                  </svg>
+                </li>
+                <li class="field-item">
+                  <label for="tel">Телефон</label>
+                  <input
+                    class="modal-input"
+                    type="tel"
+                    name="user-tel-field"
+                    id="tel"
+                  /><svg class="icon-modal-input" width="18" height="18">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                </li>
+                <li class="field-item">
+                  <label for="mail-callback">Пошта </label>
+
+                  <input
+                    class="modal-input"
+                    type="email"
+                    name="mail-callback-field"
+                    id="mail-callback"
+                  /><svg class="icon-modal-input" width="18" height="18">
+                    <use href="./images/icons.svg#icon-email-modal"></use>
+                  </svg>
+                </li>
+                <li class="field-item">
+                  <label for="comment">Коментар</label>
+                  <textarea
+                    name="comment-modal-field"
+                    id="comment"
+                    placeholder="Введіть текст"
+                    class="comment modal-input"
+                  ></textarea>
+                </li>
+                <li class="license-item">
+                  <label>
+                    Я погоджуюся з розсилкою та приймаю <a href="" target="_blank" class="license-agreement-site"
+                      >Умови договору</a
+                    >  
+                    <input
+                    class="license-checkbox"
+                    type="checkbox"
+                    name="license"
+                    value="agreed"
+                  /><span class="license-checkbox-icon"
+                  </span>
+                  </label>
+                </li>
+              </ul>
+              <button class="submit-modal" type="submit">Відправити</button>
+            </form>
             <button data-modal-close class="close-modal">
-              <svg class="close-icon" width="31" height="30">
+              <svg class="close-icon" width="30" height="30">
                 <use href="./images/icons.svg#close-icon"></use>
               </svg>
             </button>
@@ -105,7 +169,6 @@
                 </svg>
               </div>
               <h3 class="feature-title">Пунктуальність</h3>
-
               <p class="feature-description">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
@@ -523,6 +586,26 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="form-container">
+          <form class="mail-field-form">
+            <label for="mail-field">Підпишіться на розсилку</label>
+            <p class="mail-input">
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                id="mail-field"
+                class="email-input"
+              />
+              <button class="email-submit-button" type="submit">
+                Підписатися
+                <svg class="icon-submit-bot" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </p>
+          </form>
         </div>
       </div>
     </footer>

@@ -355,3 +355,82 @@ li > a {
 .bot-social-link:last-of-type {
   margin-right: 0px;
 }
+.form-container {
+  margin-left: 93px;
+  width: 570px;
+  min-height: 50px;
+}
+.mail-field-form {
+  display: flex;
+  flex-direction: column;
+}
+.mail-field-form [for="mail-field"] {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mail-input {
+  display: flex;
+  align-content: baseline;
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mail-input [placeholder] {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.email-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+  transition: var(--link-button-background-action-transition-value);
+}
+
+.email-submit-button {
+  position: relative;
+  color: var(--primary-button-accent-text-color);
+  background-color: #2169f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 64px;
+  text-align: center;
+}
+.icon-submit-bot {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: currentColor;
+}
